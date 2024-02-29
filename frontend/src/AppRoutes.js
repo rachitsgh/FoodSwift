@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Homepage from "./pages/Home/Homepage";
 import FoodPage from "./pages/Food/FoodPage";
+
 const AppRoutes=()=>{
     return (
         <Routes>

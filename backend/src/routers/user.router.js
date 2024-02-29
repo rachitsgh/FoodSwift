@@ -16,4 +16,4 @@ router.post('/login',(req,res) =>{
     }
 });
 
-const gener
+//const gener
