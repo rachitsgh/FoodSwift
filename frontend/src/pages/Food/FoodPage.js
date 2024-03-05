@@ -3,30 +3,29 @@ import { useNavigate, useParams } from 'react-router-dom';
 import Price from '../../components/Price/Price';
 import StarRating from '../../components/StarRating/StarRating';
 import Tags from '../../components/Tags/Tags';
-// import { useCart } from '../../hooks/useCart';
-import { getById } from "../../Service/foodServices";
+import { useCart } from '../../hooks/useCart';
+import { getById } from '../../services/foodService';
 import classes from './foodPage.module.css';
-// import NotFound from '../../components/NotFound/NotFound';
+import NotFound from '../../components/NotFound/NotFound';
 export default function FoodPage() {
   const [food, setFood] = useState({});
   const { id } = useParams();
-//   const { addToCart } = useCart();
+  const { addToCart } = useCart();
   const navigate = useNavigate();
 
   const handleAddToCart = () => {
-    // addToCart(food);
+    addToCart(food);
     navigate('/cart');
   };
 
   useEffect(() => {
-    getById(id).then(setFood());
+    getById(id).then(setFood);
   }, [id]);
   return (
     <>
-      {
-        !food? <div>hello</div>:
-        // <NotFound message="Food Not Found!" linkText="Back To Homepage" />
-       (
+      {!food ? (
+        <NotFound message="Food Not Found!" linkText="Back To Homepage" />
+      ) : (
         <div className={classes.container}>
           <img
             className={classes.image}
