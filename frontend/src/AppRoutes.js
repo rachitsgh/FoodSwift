@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Homepage from "./pages/Home/Homepage";
 import FoodPage from "./pages/Food/FoodPage";
-import CartPage from "./pages/Cart/CartPage";
 const AppRoutes=()=>{
     return (
         <Routes>
