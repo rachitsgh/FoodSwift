@@ -5,14 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import './axiosConfig';
+import { LoadingProvider } from './hooks/useLoading';
+import CartProvider from './hooks/useCart';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <CartProvider>
-        <App />
-      </CartProvider>
+      <LoadingProvider>
+        <CartProvider>
+          <App />
+        </CartProvider>
+      </LoadingProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
