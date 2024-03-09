@@ -8,8 +8,8 @@ import {
   getAllByTag,
   getAllTags,
   search,
-} from "../../Service/foodServices"
-// import NotFound from '../../components/NotFound/NotFound';
+} from "../../Services/foodService"
+import NotFound from '../../components/NotFound/NotFound';
 
 const initialState = { foods: [], tags: [] };
 
