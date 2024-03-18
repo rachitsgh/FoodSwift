@@ -4,50 +4,37 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import './axiosConfig';
-<<<<<<< HEAD
-import { LoadingProvider } from './hooks/useLoading';
 import CartProvider from './hooks/useCart';
-=======
+import './axiosConfig';
 import { AuthProvider } from './hooks/useAuth';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-
->>>>>>> 869b8b98d65c6b72e44711096a379df12b818ff3
+import { LoadingProvider } from './hooks/useLoading';
+import './interceptors/authInterceptor';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-<<<<<<< HEAD
       <LoadingProvider>
-        <CartProvider>
-          <App />
-        </CartProvider>
+        <AuthProvider>
+          <CartProvider>
+            <App />
+            <ToastContainer
+              position="bottom-right"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+            />
+          </CartProvider>
+        </AuthProvider>
       </LoadingProvider>
-=======
-      <CartProvider>
-        <App />
-      </CartProvider>
-    <AuthProvider>
-      <CartProvider>
-        <App />
-        <ToastContainer
-        position='bottom-right'
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme='light'
-        />
-      </CartProvider>
-    </AuthProvider>
->>>>>>> 869b8b98d65c6b72e44711096a379df12b818ff3
     </BrowserRouter>
   </React.StrictMode>
 );
