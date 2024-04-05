@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import CartPage from './pages/Cart/CartPage';
 import FoodPage from './pages/Food/FoodPage';
-import HomePage from './pages/Home/Homepage';
+import HomePage from './pages/Home/HomePage';
 import LoginPage from './pages/Login/LoginPage';
 import RegisterPage from './pages/Register/RegisterPage';
 import AuthRoute from './components/AuthRoute/AuthRoute';
