@@ -1,13 +1,11 @@
 {
-    "name": "foodmine-react",
+    "name": "BiteSwift",
     "version": "1.0.0",
     "description": "## 1. Demo And Installation",
     "main": "index.js",
     "scripts": {
       "start": "node backend/src/server.js",
-      "prebuild": "cd backend && npm install & cd frontend && npm install",
-      "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
-      "postbuild": "mv -f frontend/build backend/src/public"
+      "build": "cd backend && npm install && cd ../frontend && npm install && npm run build"
     },
     "keywords": [],
     "author": "",
