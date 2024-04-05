@@ -12,7 +12,7 @@ const Price=({ price, locale, currency })=> {
 
 Price.defaultProps = {
   locale: 'en-US',
-  currency: 'USD',
+  currency: 'INR',
 };
 
 export default Price;

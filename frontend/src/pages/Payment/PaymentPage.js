@@ -5,7 +5,6 @@ import Title from '../../components/Title/Title';
 import OrderItemsList from '../../components/OrderItemsList/OrderItemsList';
 import Map from '../../components/Map/Map';
 import PaypalButtons from '../../components/PaypalButtons.js/PaypalButtons';
-//import PaypalButtons from '../../components/PaypalButtons/PaypalButtons';
 
 export default function PaymentPage() {
   const [order, setOrder] = useState();
