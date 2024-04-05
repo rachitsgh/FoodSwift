@@ -1,4 +1,4 @@
-https://github.com/rachitsgh/BiteSwift/blob/main/README.md# BiteSwift Food Delivery Website
+# BiteSwift Food Delivery Website
 
 Visit [BiteSwift](https://biteswift.onrender.com)
 
