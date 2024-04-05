@@ -1,18 +1,19 @@
 import React from 'react';
-import classes from "./Header.module.css"
 import { Link } from 'react-router-dom';
 import { useCart } from '../../hooks/useCart';
-const Header=()=>{
-    const user={
-        name:'john',
-    }
-    const {cart}=useCart();
-    const logout = ()=>{}
-    return(
+import classes from './header.module.css';
+import { useAuth } from '../../hooks/useAuth';
+
+export default function Header() {
+  const { user, logout } = useAuth();
+
+  const { cart } = useCart();
+
+  return (
     <header className={classes.header}>
       <div className={classes.container}>
         <Link to="/" className={classes.logo}>
-          BiteSwift
+          Food Mine!
         </Link>
         <nav>
           <ul>
@@ -22,7 +23,7 @@ const Header=()=>{
                 <div className={classes.menu}>
                   <Link to="/profile">Profile</Link>
                   <Link to="/orders">Orders</Link>
-                  <button onClick={logout}>Logout</button>
+                  <a onClick={logout}>Logout</a>
                 </div>
               </li>
             ) : (
@@ -41,7 +42,5 @@ const Header=()=>{
         </nav>
       </div>
     </header>
-    )
+  );
 }
-
-export default Header;

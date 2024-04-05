@@ -1,0 +1,16 @@
+{
+    "name": "BiteSwift",
+    "version": "1.0.0",
+    "description": "## 1. Demo And Installation",
+    "main": "index.js",
+    "scripts": {
+      "start": "node backend/src/server.js",
+      "build": "cd backend && npm install && cd ../frontend && npm install && npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "engines": {
+      "node": ">=18 <19"
+    }
+}
