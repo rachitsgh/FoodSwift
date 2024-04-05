@@ -25,7 +25,7 @@ app.use('/api/users', userRouter);
 app.use('/api/orders', orderRouter);
 app.use('/api/upload', uploadRouter);
 
-import { path } from 'path';
+import path from 'path';
 __dirname = path.resolve();
 if(process.env.NODE_ENV === 'production'){
   app.use(express.static(path.join(__dirname, '/frontend/build')));
