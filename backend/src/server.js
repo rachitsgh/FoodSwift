@@ -9,7 +9,6 @@ import orderRouter from './routers/order.router.js';
 import uploadRouter from './routers/upload.router.js';
 
 import { dbconnect } from './config/database.config.js';
-import path, { dirname } from 'path';
 dbconnect();
 
 const app = express();
@@ -26,7 +25,7 @@ app.use('/api/users', userRouter);
 app.use('/api/orders', orderRouter);
 app.use('/api/upload', uploadRouter);
 
-const path = require('path');
+import { path } from 'path';
 __dirname = path.resolve();
 if(process.env.NODE_ENV === 'production'){
   app.use(express.static(path.join(__dirname, '/frontend/build')));
