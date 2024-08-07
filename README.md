@@ -2,7 +2,7 @@
 
 Visit [BiteSwift](https://biteswift.onrender.com)
 
-<h4><a href="https://1drv.ms/w/c/b1159589402332dd/EUGHifLyxD5IuCYEQ_A7b9IB5u-rhtdgD5e2pG8_kqHa4w?e=P6tfFI"> High Level Design </a></h4>
+<h4><a href="https://1drv.ms/w/c/b1159589402332dd/EUGHifLyxD5IuCYEQ_A7b9IB5u-rhtdgD5e2pG8_kqHa4w?e=P6tfFI"> Design Document </a></h4>
 
 ## Project Overview
 
